@@ -1,0 +1,21 @@
+node_modules/
+build/
+# Staged by `npm run stage` — the platform folders keep only their manifest,
+# index.html and icons under version control.
+tizen/app.js
+tizen/tv.css
+tizen/vendor/
+tizen/subs/
+tizen/.buildResult/
+tizen/.manifest.tmp
+tizen/*.wgt
+# Written by `tizen package` with YOUR certificates — never commit them.
+tizen/author-signature.xml
+tizen/signature1.xml
+webos/app.js
+webos/tv.css
+webos/vendor/
+webos/subs/
+webos/*.ipk
+*.log
+test-results/
