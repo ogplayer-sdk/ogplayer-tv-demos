@@ -1,0 +1,14 @@
+{
+  "name": "ogplayer-tv-demos",
+  "private": true,
+  "version": "1.6.0",
+  "description": "OGPlayer smart-TV demo apps for Samsung Tizen and LG webOS",
+  "type": "module",
+  "scripts": {
+    "stage": "node stage.mjs",
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "ogplayer": "^1.6.0"
+  }
+}

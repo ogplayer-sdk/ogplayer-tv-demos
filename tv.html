@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" data-og-app-id="">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OGPlayer TV shell — test harness</title>
+<!-- TEST HARNESS, not a demo: the same shell the Tizen and webOS apps package,
+     loaded in a desktop browser so the automated suite can drive it with the
+     keyboard (arrows, Enter, Esc/Backspace stand in for the remote). The TV
+     demos are the packaged apps in tizen/ and webos/. Requires `npm run stage`. -->
+<link rel="stylesheet" href="./shared/tv.css">
+</head>
+<body>
+<script src="./tizen/vendor/ogplayer.tv.global.js"></script>
+<script src="./tizen/vendor/ogplayer.dash.global.js"></script>
+<script src="./shared/app.js"></script>
+</body>
+</html>

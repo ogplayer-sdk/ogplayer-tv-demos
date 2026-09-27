@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Samsung Tizen TV shell for the OGPlayer web SDK demo.
+  - `id` of <tizen:application> is <10-char package id>.<app name>; the package
+    id is any 10 alphanumeric characters you choose once and keep. The same
+    string, prefixed "tizen:", is the `licenseAppId` the app passes to the SDK.
+  - `required_version` 5.5 = 2020 models (Chromium 69), the oldest supported.
+  - `tv.inputdevice` is what lets the page receive the media and colour keys
+    after `tizen.tvinputdevice.registerKeyBatch` (app.js does that).
+  - `hwkey-event="enable"` delivers the Back key as keyCode 10009.
+  - No `drmplay` privilege is needed: Widevine/PlayReady go through EME.
+-->
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets"
+        id="http://ogplayer.tv/tv-demo" version="1.6.0" viewmodes="maximized">
+  <tizen:application id="ABCDEFGHIJ.OGPlayerDemo" package="ABCDEFGHIJ" required_version="5.5"/>
+  <content src="index.html"/>
+  <feature name="http://tizen.org/feature/screen.size.all"/>
+  <icon src="icon.png"/>
+  <name>OGPlayer TV demo</name>
+  <tizen:privilege name="http://tizen.org/privilege/internet"/>
+  <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+  <tizen:profile name="tv-samsung"/>
+  <tizen:setting screen-orientation="landscape" context-menu="disable"
+                 background-support="disable" encryption="disable"
+                 install-location="auto" hwkey-event="enable"/>
+  <access origin="*" subdomains="true"/>
+</widget>
